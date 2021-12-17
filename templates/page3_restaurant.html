@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8"/>
+    <title>HTML Form Response</title>
+</head>
+
+<style>
+    body{font-family:'Open Sans'; text-align:center;}  
+    </style>
+
+<body>
+    <h1>TRAVEL GUIDE</h1>
+    <h2>Hi, Hearing you like {{food}} food, here are the list of TOP 10 {{food}} restaurant in this state! <br/><br/>
+    </h2>
+    <form action="/handle_form3" method="POST">
+      <p>
+        Which restaurant you want to look into? 
+        <br/>
+        Please input its ranking number!! 😊
+        <br/><br/>
+        Your restaurant number: <input name="resname" type="text"/><br/><br/>
+        <input type="submit" value="See more details"/><br/><br/>
+      </p>
+      
+      <table>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 8px;
+                margin: auto
+            }
+        </style>
+        <tr>
+            <th>Ranking</th>
+            <th>Restaurant name</th>
+            <th>Price</th>
+            <th>Rating</th>
+        </tr>
+        {% for row in results %}
+        <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+            <td>{{row[2]}}</td>
+            <td>{{row[3]}}</td>
+        </tr>
+        {% endfor %}
+        </tr>
+    </table>
+
+    <p>Enjoy! 
+        </p>
+  
+      
+    </form>  
+</body>
+
+<h3>Here are the graph which describles the rankings/prices of these restaurant!</h3>
+{{plot_div | safe}}
+
+
+<footer>
+    <br>
+    <br>
+    <p><div class="center">© 2021 Xin Ye</div></p>
+</footer>
+</html>
