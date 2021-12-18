@@ -1,6 +1,6 @@
 # SI507_finalproject
 
-Welcome to my SI507 final project! This is a project about a guide tour and restaurant advisor application is realized. User could search different types of restaurants recommended in different states and also get the information of nearby places of the restaurant.
+Welcome to my SI507 final project! This is a project about a guide tour and restaurant advisor application is realized. Users could choose the state they like to visit and the food type they prefer and see the results of top 10 restaurants in that category. They could also choose to see the detail information of a restaurant they like such as phone number, address, zip code etc. We also provide the information of places of interests near this restaurant including the its name, address, city and category for users which they could choose to visit after their meal.
 
 # Project Description
 First, the user can choose a state in all 52 states we provided. They could also choose whether see the map of this state by clicking on the box.
@@ -27,6 +27,7 @@ In order to run the code, you need to get your own API keys from YELP and MapQue
 
 The website for you to get YELP API Key: https://www.yelp.com/developers/documentation/v3/authentication
 (click “Go to Create App, follow their instructions and get your API key!)
+
 The website for you to get MapQuest API Key: https://developer.mapquest.com (click “Get your free API Key”). 
 
 Once you get API keys, make secrets.py in the same folder with your project code and save the API key in secrets.py.  The secrets.py file should contain two single line like this (replace “xxxxxxx” with your API key): 
