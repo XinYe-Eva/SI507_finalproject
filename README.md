@@ -30,7 +30,9 @@ The website for you to get YELP API Key: https://www.yelp.com/developers/documen
 The website for you to get MapQuest API Key: https://developer.mapquest.com (click “Get your free API Key”). 
 
 Once you get API keys, make secrets.py in the same folder with your project code and save the API key in secrets.py.  The secrets.py file should contain two single line like this (replace “xxxxxxx” with your API key): 
+
 YELP_API_KEY = xxxxxxx
+
 MAPQUEST_API_KEY = xxxxxxx
 # Step2: Install Python Packages
 Please install the Python packages for my project to work first:
